@@ -1,4 +1,4 @@
-import Notelist from "./components/NotesList"
+import NotesList from "./components/NotesList"
 import { useState } from "react"
 import { nanoid } from "nanoid"
 
@@ -17,9 +17,9 @@ const App = () => {
     id: nanoid(),
     text: "This is my third note",
     date: 3 / 9 / 2021
-  },])
+  }])
   return <div className="container">
-    <Notelist notes={notes} />
+    <NotesList notes={notes} />
   </div>
 }
 export default App
